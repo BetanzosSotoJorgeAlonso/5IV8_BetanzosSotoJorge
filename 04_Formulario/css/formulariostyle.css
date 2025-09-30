@@ -1,0 +1,31 @@
+*{
+    background-color: #0B2F44;
+    font-family: "Lexend", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+div, ul, li, ol, p, h1, h3{
+    background-color: #C8F9E8;
+}
+
+div, header, p{
+    padding: 10px;
+    margin: 10px;
+}
+
+strong{
+    background-color: #FF7069;
+}
+
+form{
+    background-color: #C8F9E8;
+}
+
+label, input{
+    background-color: #91BFAF;
+}
+
+button{
+    background-color: #FF7069;
+}
