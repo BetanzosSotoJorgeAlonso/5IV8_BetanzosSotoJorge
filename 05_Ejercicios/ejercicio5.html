@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <header><p>Calcular porcentaje de hombres y mujeres</p></header>
+    <div class="container">
+        <div class="container-table">
+            <table class="table">
+                <tr>
+                    <td>
+                        Ingresar la cantidad de alumnos en el salón:
+                    </td>
+                    <td>
+                        <input type="text" id="cantidadi" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresar la cantidad de mujeres en el salón:
+                    </td>
+                    <td>
+                        <input type="text" id="mujeresi" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresar la cantidad de hombres en el salón:
+                    </td>
+                    <td>
+                        <input type="text" id="hombresi" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" id="btnCalcular" onclick="validarYCalcular()">Calcular porcentaje</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Porcentaje de hombres:
+                    </td>
+                    <td>
+                        <input type="text" id="porcHombresi" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Porcentaje de mujeres:
+                    </td>
+                    <td>
+                        <input type="text" id="porcMujeresi" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" id="btnBorrar" onclick="borrarf()">Borrar datos</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/funcionese5.js"></script>
+</body>
+</html>
