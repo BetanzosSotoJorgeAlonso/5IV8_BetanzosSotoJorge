@@ -7,21 +7,45 @@ function validarn(e){
     return patron.test(codigo);
 }
 
+function validarm(e){
+    var tecladom = (document.all)? e.keyCode : e.which;
+    if (tecladom == 8) return true;
+    var patronm = /[0-9\d]/;
+
+    var codigom = String.fromCharCode(tecladom);
+    return patronm.test(codigom);
+}
+
+function validarRangoFinal() {
+    var inputElemento = document.getElementById("mesesi");
+    var meses = parseInt(inputElemento.value);
+
+    if (meses < 1 || meses > 18) {
+        alert("Ingresar mínimo un mes y máximo 18 meses");
+        return false;
+    }
+    return true;
+}
+
+
 function interes(){
         var valor = document.getElementById("cantidadi").value;
+        var valorm = document.getElementById("mesesi").value;
 
-        var parseo = parseFloat(valor);
-        alert(parseo);
-        var interes = parseo*(0.085); //limite a 2 decimales
-        alert(interes);
-        var total = interes + parseo;
-        alert(total);
-        document.getElementById("saldoi").value = "$" + total; //limite a 2 decimales
+
+        var capitalInicial = parseFloat(valor);
+        var meses = parseInt(valorm);
+        const tasaMensual = 0.00648; 
+
+        var valorFinal = capitalInicial * Math.pow((1 + tasaMensual), meses);
+
+        document.getElementById("saldoi").value = "$" + valorFinal.toFixed(2);
 }
 
 function borrarf(){
     document.getElementById("saldoi").value = "";
     document.getElementById("cantidadi").value = "";
+    document.getElementById("mesesi").value = "";
 }
 
 /*

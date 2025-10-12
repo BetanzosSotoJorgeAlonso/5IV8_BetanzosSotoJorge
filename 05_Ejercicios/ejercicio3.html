@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <header><p>Calcular descuento del 15% por producto</p></header>
+    <div class="container">
+        <div class="container-table">
+            <table class="table">
+                <tr>
+                    <td>
+                        Ingresar el precio del producto:
+                    </td>
+                    <td>
+                        <input type="text" id="productoi" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" id="btnCalculari" onclick="calcularDescuento()">Calcular descuento</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Precio del producto:
+                    </td>
+                    <td>
+                        <input type="text" id="prcProductoi" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Descuento (15%):
+                    </td>
+                    <td>
+                        <input type="text" id="descuentoi" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Total a pagar:
+                    </td>
+                    <td>
+                        <input type="text" id="totali" readonly="readonly">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" id="btnBorrar" onclick="borrarf()">Borrar datos</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/funcionese3.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <header><p>Calculadora de calificación final de algoritmia </p></header>
+    <div class="container">
+        <div class="table">
+            <table class="table">
+                <tr>
+                    <td>
+                        Ingresa tu calificación del primer parcial:
+                    </td>
+                    <td>
+                        <input type="text" id="parcial1i" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresa tu calificación del segundo parcial:
+                    </td>
+                    <td>
+                        <input type="text" id="parcial2i" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresa tu calificación del tercer parcial:
+                    </td>
+                    <td>
+                        <input type="text" id="parcial3i" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresa tu calificación del examen final:
+                    </td>
+                    <td>
+                        <input type="text" id="finali" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresa tu calificación del trabajo final:
+                    </td>
+                    <td>
+                        <input type="text" id="trabajoi" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" id="btnCalcular" onclick="calcularFinal()">Calcular calificación final</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Calificación final:
+                    </td>
+                    <td>
+                        <input type="text" id="calFinali" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" id="btnBorrar" onclick="borrarf()">Borrar datos</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/funcionese4.js"></script>
+</body>
+</html>

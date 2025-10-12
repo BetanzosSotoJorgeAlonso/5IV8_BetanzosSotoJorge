@@ -68,6 +68,10 @@ section.boton, section.nombre {
   align-items: center;    
 }
 
+section.boton-mult{
+  flex-direction: column;
+}
+
 button {
       padding: 8px;
       background: #FF7069;

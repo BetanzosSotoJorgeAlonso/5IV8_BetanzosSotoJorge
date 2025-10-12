@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header> <p> Calculadora de sueldo total con ventas</p></header>
+    <div class="container">
+        <div class="container-table">
+            <table class="table">
+                <tr>
+                    <td>
+                        Introduce el sueldo base:
+                    </td>
+                    <td>
+                        <input type="text" name="sueldo" id="sueldoi" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresa la primera venta:
+                    </td>
+                    <td>
+                        <input type="text" name="com1" id="com1i" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ingresa la segunda venta:
+                    </td>
+                    <td>
+                        <input type="text" name="com2" id="com2i" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Ingresa la tercera venta:
+                    </td>
+                    <td>
+                        <input type="text" name="com3" id="com3i" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td> <button type="button" onclick="calcularTotal()"> Calcular sueldo total</button></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Sueldo total:
+                    </td>
+                    <td>
+                        <input type="text" name="stotal" id="stotali" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Comision por venta 1:
+                    </td>
+                    <td>
+                        <input type="text" name="venta1" id="venta1i" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Comision por venta 2:
+                    </td>
+                    <td>
+                        <input type="text" name="venta2" id="venta2i" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Comision por venta 3:
+                    </td>
+                    <td>
+                        <input type="text" name="venta3" id="venta3i" readonly="readonly">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Borrar Datos" name="borrar" onclick="borrarf()">
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+    <script src="./js/funcionese2.js"></script>
+</body>
+</html>
