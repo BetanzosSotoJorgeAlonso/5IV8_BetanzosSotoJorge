@@ -1,0 +1,53 @@
+*{
+    background-color: #0B2F44;
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header, p{
+    background-color: #C8F9E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.container{
+    background-color: #C8F9E8;
+}
+
+div.container-table{
+    background-color: #C8F9E8;
+}
+
+table{
+    background-color: #C8F9E8;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    background-color: #C8F9E8;
+}
+
+button, input{
+    background-color: #FF7069;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover, input:hover{
+    background: #D9534F;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
