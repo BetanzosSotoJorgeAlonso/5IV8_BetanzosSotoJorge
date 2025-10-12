@@ -1,16 +1,9 @@
-function validarn(e){
-    var teclado = (document.all)? e.keyCode : e.which;
-    if (teclado == 8) return true;
-    var patron = /[0-9\d .]/;
 
-    var codigo = String.fromCharCode(teclado);
-    return patron.test(codigo);
-}
 
 function validarm(e){
     var tecladom = (document.all)? e.keyCode : e.which;
     if (tecladom == 8) return true;
-    var patronm = /[0-9\d]/;
+    var patronm = /[0-9\d .]/;
 
     var codigom = String.fromCharCode(tecladom);
     return patronm.test(codigom);
