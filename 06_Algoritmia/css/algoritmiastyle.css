@@ -27,3 +27,9 @@ button, input, em, pre{
 button:hover, input:hover{
     background: #D9534F;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
