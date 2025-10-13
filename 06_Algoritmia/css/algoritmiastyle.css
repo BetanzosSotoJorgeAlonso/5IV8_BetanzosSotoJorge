@@ -1,0 +1,29 @@
+
+*{
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #0B2F44;
+}
+
+div.container, div.problema-container h2.problema-title, div.problema-content, h3{
+    background-color: #C8F9E8;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.tablas, table.problema-tablas, tr, td, thead, th{
+    background-color: #C8F9E8;
+}
+
+button, input, em, pre{
+    background-color: #FF7069;
+}
+
+button:hover, input:hover{
+    background: #D9534F;
+}
