@@ -1,0 +1,52 @@
+*{
+    background-color: black;
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+div.container{
+    background-color: #0B2F44;
+    margin: 20px;
+    padding: 20px;
+}
+
+div.instrucciones{
+    background-color: #C8F9E8;
+    margin: 10px;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.problema{
+    background-color: #C8F9E8;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form, label, pre{
+    background-color: #C8F9E8;
+}
+
+button, input{
+    background-color: #FF7069;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover, input:hover{
+    background: #D9534F;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
