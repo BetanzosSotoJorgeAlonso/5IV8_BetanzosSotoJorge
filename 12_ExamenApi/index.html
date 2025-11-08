@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api fútbol</title>
+    <link rel="stylesheet" href="./css/examenstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Football Standings</h1>
+            <p class="subtitle">Ver las clasificaciones de las principales ligas de fútbol</p>
+        </div>
+
+        <div class="controls">
+            <form onsubmit="return false;">
+                <div class="form-group">
+                    <label for="league">Liga:</label>
+                    <select id="league" name="league">
+                        <option value="eng.1">Premier League (Inglaterra)</option>
+                        <option value="esp.1">La Liga (España)</option>
+                        <option value="ger.1">Bundesliga (Alemania)</option>
+                        <option value="ita.1">Serie A (Italia)</option>
+                        <option value="fra.1">Ligue 1 (Francia)</option>
+                        <option value="uefa.champions">UEFA Champions League</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="season">Temporada:</label>
+                    <input type="text" id="season" name="season" placeholder="Ej: 2024" value="2024">
+                </div>
+
+                <input type="button" id="btnSearch" value="Obtener Clasificación">
+            </form>
+        </div>
+
+        <div id="results"></div>
+    </div>
+<footer>
+        <button onclick="location.href='../index.html'">Regresar al index</button>
+    </footer>
+    <script src="./js/apiexamen.js"></script>
+</body>
+</html>
