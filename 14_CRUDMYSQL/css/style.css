@@ -1,0 +1,116 @@
+/* Colores:
+#0B2F44 para el fondo/objetos de fondo (Background/Elements)
+#C8F9E8 para el resto (Main Text/Foreground)
+#FF7069 para los botones/detalles especificos (Buttons/Accents)
+*/
+
+/* --- Estilos Generales --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0B2F44; /* Fondo principal */
+    color: #C8F9E8; /* Color de texto principal */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #FF7069; /* Color de acento para el título */
+    margin-bottom: 20px;
+}
+
+/* --- Estilos del Formulario --- */
+form {
+    background-color: #0B2F44; /* Fondo del formulario (igual que el body para un look limpio) */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+    border: 1px solid #C8F9E8; /* Borde sutil */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #C8F9E8;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #C8F9E8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #0B2F44; /* Fondo de los campos de texto */
+    color: #C8F9E8; /* Texto escrito en los campos */
+}
+
+/* Estilo para el placeholder (texto de guía dentro del input) */
+input::placeholder {
+    color: rgba(200, 249, 232, 0.7);
+}
+
+button[type="submit"] {
+    background-color: #FF7069; /* Color de acento para el botón principal */
+    color: #0B2F44; /* Texto en el botón, contrastando con el fondo */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f7a09c; /* Ligeramente más claro al pasar el ratón */
+}
+
+/* --- Estilos de la Lista de Estudiantes --- */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+li {
+    background-color: #0B2F44; /* Fondo de cada elemento de la lista */
+    border: 1px solid #C8F9E8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    color: #FF7069; /* Color de acento para el nombre */
+}
+
+/* Estilos para los enlaces de Editar/Eliminar */
+li a {
+    color: #C8F9E8; /* Color de texto claro para los enlaces */
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #0B2F44; /* Fondo del enlace */
+    border: 1px solid #C8F9E8;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+li a:hover {
+    color: #0B2F44; /* Texto oscuro al pasar el ratón */
+    background-color: #C8F9E8; /* Fondo claro al pasar el ratón */
+}
