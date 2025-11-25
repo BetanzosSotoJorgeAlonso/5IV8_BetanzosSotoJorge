@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización de Reporte</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Actualización de Reporte de Mantenimiento</h1>
+    
+    <form action="/reportes/update/<%= reporte.id %>" method="POST">
+        <label for="fecha_hora">Fecha y Hora del Reporte: </label>
+        <input type="datetime-local" id="fecha_hora" name="fecha_hora" value="<%= new Date(reporte.fecha_hora).toISOString().slice(0,16) %>" required>
+        <br>
+        <label for="equipo_afectado">ID de Equipo Afectado: </label>
+        <input type="text" id="equipo_afectado" name="equipo_afectado" value="<%= reporte.equipo_afectado %>" required>
+        <br>
+        <label for="sintoma_reportado">Síntoma/Fallo Reportado: </label>
+        <input type="text" id="sintoma_reportado" name="sintoma_reportado" value="<%= reporte.sintoma_reportado %>" required>
+        <br>
+        <label for="diagnostico_tecnico">Diagnóstico del Técnico: </label>
+        <input type="text" id="diagnostico_tecnico" name="diagnostico_tecnico" value="<%= reporte.diagnostico_tecnico || '' %>">
+        <br>
+        <label for="accion_correctiva">Acción Correctiva: </label>
+        <input type="text" id="accion_correctiva" name="accion_correctiva" value="<%= reporte.accion_correctiva || '' %>">
+        <br>
+        <label for="piezas_reemplazadas">Piezas Reemplazadas: </label>
+        <input type="text" id="piezas_reemplazadas" name="piezas_reemplazadas" value="<%= reporte.piezas_reemplazadas || '' %>">
+        <br>
+        <label for="tiempo_inactividad">Tiempo de Inactividad: </label>
+        <input type="text" id="tiempo_inactividad" name="tiempo_inactividad" value="<%= reporte.tiempo_inactividad || '' %>">
+        <br>
+        <button type="submit">Actualizar Reporte</button>
+    </form>
+
+     <h2>Lista de Reportes</h2>
+    <ul>
+        <% reportes.forEach(function(reporte){ %>
+            <li>
+                <strong>Equipo <%= reporte.equipo_afectado %></strong> - 
+                <%= new Date(reporte.fecha_hora).toLocaleString('es-MX') %><br>
+                <em>Síntoma:</em> <%= reporte.sintoma_reportado %><br>
+                <% if(reporte.diagnostico_tecnico) { %>
+                    <em>Diagnóstico:</em> <%= reporte.diagnostico_tecnico %><br>
+                <% } %>
+                <% if(reporte.tiempo_inactividad) { %>
+                    <em>Tiempo de inactividad:</em> <%= reporte.tiempo_inactividad %><br>
+                <% } %>
+                <a href="/reportes/edit/<%= reporte.id %>">Editar</a>
+                <a href="/reportes/delete/<%= reporte.id %>" onclick="return confirm('¿Está seguro de eliminar este reporte?')">Eliminar</a>
+            </li>
+        <% }); %>
+    </ul>
+    <script src="../validaciones.js"></script>
+</body>
+</html>
